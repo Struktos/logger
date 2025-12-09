@@ -1,0 +1,48 @@
+{
+  "name": "@struktos/logger",
+  "version": "0.1.0",
+  "description": "Context-aware structured logging for Struktos.js - Enterprise-grade observability with automatic context enrichment",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "poc": "tsx examples/poc.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "struktos",
+    "logger",
+    "logging",
+    "context",
+    "observability",
+    "structured-logging",
+    "json-logging",
+    "tracing",
+    "typescript"
+  ],
+  "author": "Struktos.js Team",
+  "license": "MIT",
+  "peerDependencies": {
+    "@struktos/core": "^0.1.0"
+  },
+  "devDependencies": {
+    "@struktos/core": "^0.1.0",
+    "@types/node": "^20.19.25",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/struktosjs/logger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/struktosjs/logger/issues"
+  },
+  "homepage": "https://github.com/struktosjs/logger#readme"
+}
